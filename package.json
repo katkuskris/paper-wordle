@@ -1,9 +1,12 @@
 {
   "name": "paper-wordle",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "17.x"
+  },
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
