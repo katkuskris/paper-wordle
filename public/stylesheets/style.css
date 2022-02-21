@@ -1,0 +1,118 @@
+/* || general styles */
+body {
+  font: 12px Tahoma, Arial, Helvetica, sans-serif;
+  max-width: 720px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.border {
+  flex: 1;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  border: 1px solid #787c7e;
+  border-radius: 4px;
+}
+
+.title {
+  text-align: center;
+}
+
+/* || instructions */
+.instructions p, .instructions ul {
+  margin-bottom: 0;
+}
+/* || game container */
+.game-container {
+  flex-direction: row;
+  margin-top: .5em;
+}
+
+.game-container-left {
+  align-items: stretch;
+  justify-content: stretch;
+  margin-right: .5em;
+}
+
+.game-container p {
+  text-align: center; 
+  margin-block-end: .5em;
+}
+
+.game-container-right {
+  flex: 1;
+}
+
+.game-container-right .border:first-child {
+  margin-bottom: .5em;
+}
+
+/* || guess grid */
+.guess-grid td, .guess-grid th {
+  text-align: center;
+  border: .5px solid #787c7e;
+  padding-top: .38em;
+  padding-bottom: .38em;
+  width: 2.25em;
+}
+
+/* || play area */
+.play-area {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* || guesses */
+.guess-box {
+  border-bottom: 1px solid #787c7e;
+  width: 32px;
+  height: 24px;
+}
+
+.guess-spaces {
+  border-spacing: .5em;
+  border-collapse: separate;
+}
+
+.guess-spaces td {
+  vertical-align: bottom;
+}
+
+/* || keyboard */
+.keyboard {
+  padding-top: 1em;
+}
+
+.keyboard-row {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.keyboard-key {
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #787c7e;
+  border-radius: 3px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  font-size: 10px;
+  height: 2.5em;
+  width: 1.8em;
+}
+
+/* || clue grid */
+.clue-grid td, .clue-grid th {
+  text-align: center;
+  border: .5px solid #787c7e;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  width: 3.75em;
+}

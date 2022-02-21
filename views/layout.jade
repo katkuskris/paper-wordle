@@ -1,0 +1,16 @@
+- var grids = [[1, clueGrid1], [2, clueGrid2]]
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    block title
+      title Popular Word Game on Paper
+  body
+    h1(class='title') Popular Word Game on Paper
+    include ./instructions.jade
+    div(class='game-container')
+      include ./guessGrid.jade
+      div(class='game-container-right')
+        each grid in grids
+          //- p= grid[0]
+          include ./playArea.jade

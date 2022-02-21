@@ -1,0 +1,22 @@
+
+- var keyboardRows = ['QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM']
+
+div(class='border')
+  div(class='play-area')
+    div
+      p
+        strong Game #{grid[0]} Guesses
+      table(class='guess-spaces')
+        each _, i in Array(6)
+          tr
+            td= i+1 
+              | .
+            each _, j in Array(5)
+              td(class='guess-box')
+
+      div(class='keyboard')
+        each _, i in keyboardRows
+          div(class='keyboard-row')
+            each _, j in keyboardRows[i]
+              div(class='keyboard-key')= keyboardRows[i][j]
+    include ./clueGrid.jade

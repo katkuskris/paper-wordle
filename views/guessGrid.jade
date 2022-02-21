@@ -1,0 +1,23 @@
+
+div(class='game-container-left')
+  div(class='border')
+    p
+      strong Guess Grid
+    table(class='guess-grid')
+      thead
+        tr
+          th
+          th 1
+          th 2
+          th 3
+          th 4
+          th 5
+      tbody
+        each row in guessGrid 
+          tr
+            th(class='guess-grid-letter')= row[0]
+            td= row[1]
+            td= row[2]
+            td= row[3]
+            td= row[4]
+            td= row[5]

@@ -1,0 +1,12 @@
+
+- var tableHeight = 11
+- var length = grid[1].length
+div
+  p
+    strong Clue Grid
+  table(class='clue-grid')
+    each _, i in Array(tableHeight)
+      tr
+        each _, j in Array(length/tableHeight)
+          td 
+            | <strong>#{grid[1][i+tableHeight*j][0]}</strong>   #{grid[1][i+tableHeight*j][1]}
