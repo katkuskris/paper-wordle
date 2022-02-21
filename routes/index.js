@@ -6,7 +6,7 @@ const fs = require('fs')
 
 /* GET home page. */
 router.get('/', async function(req, res, next) {
-  const content = fs.readFileSync('./solutions.txt', 'utf8');
+  const content = fs.readFileSync('./public/files/solutions.txt', 'utf8');
   let contentarr = content.split(/\r?\n/)
   let sol1 = contentarr[Math.floor(Math.random() * contentarr.length)]
   let sol2 = contentarr[Math.floor(Math.random() * contentarr.length)]
