@@ -1,8 +1,13 @@
+@media print {
+  html, body {
+      height: 100%;
+  }
+}
+
 /* || general styles */
 body {
   font: 12px Tahoma, Arial, Helvetica, sans-serif;
   width: 720px;
-  height: 930px;
 }
 
 div {
