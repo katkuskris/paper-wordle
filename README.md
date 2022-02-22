@@ -20,3 +20,5 @@ You can keep track of which letters you've guessed by marking the alphabet keys 
 Want to play around with it yourself? From the root folder, npm install -> npm start. It will appear on at localhost:3000.
 
 I'm a total n00b and happy to learn, so feel free to hit me up if you have suggestions or ideas. I'm sure there are better ways to build something like this!
+
+![Screenshot of the paper-wordle app](/public/images/screenshot.png)
