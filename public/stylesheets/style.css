@@ -1,14 +1,13 @@
 @media print {
   html, body {
       page-break-inside: avoid;
-      max-height: 95%;
   }
 }
 
 /* || general styles */
 body {
   font: 12px Tahoma, Arial, Helvetica, sans-serif;
-  width: 720px;
+  width: 760px;
 }
 
 div {
