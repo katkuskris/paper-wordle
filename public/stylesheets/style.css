@@ -1,6 +1,7 @@
 @media print {
   html, body {
       height: 100%;
+      page-break-inside: avoid;
   }
 }
 
