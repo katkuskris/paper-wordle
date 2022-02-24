@@ -47,7 +47,7 @@ module.exports = function (sol1, sol2) {
                 yellowTileNumbers.pop(yellowTileNumbers.indexOf(value))
             }
         }
-
+        
         // find green and yellow numbers from guessGrid and populate clueGrid
         for (let value of greenTileNumbers) {
             clueGrid.push([value, 'G'])
